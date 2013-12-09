@@ -52,6 +52,6 @@ exports.setB = function(b, moduleName) {
  * @param {string} moduleName
  * @return {number}
  */
-exports.sum = function(moduleName) {
+exports.calculate = function(moduleName) {
   return abPairs[moduleName].b + abPairs[moduleName].a;
 };
