@@ -34,7 +34,7 @@ exports.createABPair = function(moduleName) {
  * @return {Error|number}
  */
 exports.setA = function(a, moduleName) {
-  var toReturn;
+  var toReturn = abPairs[moduleName].a = a;
   return toReturn;
 };
 
