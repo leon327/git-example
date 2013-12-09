@@ -33,7 +33,8 @@ exports.createABPair = function(moduleName) {
  * @param {string} moduleName
  */
 exports.setA = function(a, moduleName) {
-  abPairs[moduleName].a = a;
+  var toReturn = abPairs[moduleName].a = a;
+  return toReturn;
 };
 
 
