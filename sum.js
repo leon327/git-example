@@ -1,5 +1,5 @@
 /**
- * @author 0@39.yt (Yurij Mikhalevich)
+ * @author mr.leon327@yandex.ru
  * @license MIT
  */
 
