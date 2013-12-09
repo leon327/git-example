@@ -50,8 +50,12 @@ exports.setB = function(b, moduleName) {
 /**
  * Calculates and returns sum
  * @param {string} moduleName
- * @return {number}
+ * @return {Error|number}
  */
 exports.calculate = function(moduleName) {
-  return abPairs[moduleName].b + abPairs[moduleName].a;
+  if (!abPairs[moduleName]) {
+    return new Error('there is no such module');
+  } else {
+    return abPairs[moduleName].b + abPairs[moduleName].a;
+  }
 };
