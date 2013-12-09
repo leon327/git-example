@@ -1,3 +1,12 @@
+/**
+ * @author 0@39.yt (Yurij Mikhalevich)
+ * @license MIT
+ */
+
+
+/**
+ * @type {Object}
+ */
 var abPairs = {};
 
 

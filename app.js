@@ -1,4 +1,5 @@
-/*
+/**
+ * @author 0@39.yt (Yurij Mikhalevich)
  * @license MIT
  */
 
