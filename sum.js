@@ -31,9 +31,16 @@ exports.createABPair = function(moduleName) {
  * Sets a variable value for module with provided name
  * @param {number} a
  * @param {string} moduleName
+ * @return {Error|number}
  */
 exports.setA = function(a, moduleName) {
-  abPairs[moduleName].a = a;
+  var toReturn;
+  if (!abPairs[moduleName]) {
+    toReturn = new Error('there is no such module');
+  } else {
+    toReturn = abPairs[moduleName].a = a;
+  }
+  return toReturn;
 };
 
 
@@ -41,9 +48,16 @@ exports.setA = function(a, moduleName) {
  * Sets b variable value for module with provided name
  * @param {number} b
  * @param {string} moduleName
+ * @return {Error|number}
  */
 exports.setB = function(b, moduleName) {
-  abPairs[moduleName].b = b;
+  var toReturn;
+  if (!abPairs[moduleName]) {
+    toReturn = new Error('there is no such module');
+  } else {
+    toReturn = abPairs[moduleName].b = b;
+  }
+  return toReturn;
 };
 
 

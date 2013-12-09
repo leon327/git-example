@@ -7,6 +7,7 @@ var stack = [];
 
 
 /**
+ * Adds element to stack
  * @param {*} element
  */
 exports.push = function(element) {
@@ -15,6 +16,7 @@ exports.push = function(element) {
 
 
 /**
+ * Pops element from stack
  * @return {*}
  */
 exports.pop = function() {
@@ -23,6 +25,7 @@ exports.pop = function() {
 
 
 /**
+ * Checks for emptiness
  * @return {boolean}
  */
 exports.isEmpty = function() {
