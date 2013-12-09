@@ -35,11 +35,6 @@ exports.createABPair = function(moduleName) {
  */
 exports.setA = function(a, moduleName) {
   var toReturn;
-  if (!abPairs[moduleName]) {
-    toReturn = new Error('there is no such module');
-  } else {
-    toReturn = abPairs[moduleName].a = a;
-  }
   return toReturn;
 };
 
@@ -52,11 +47,6 @@ exports.setA = function(a, moduleName) {
  */
 exports.setB = function(b, moduleName) {
   var toReturn;
-  if (!abPairs[moduleName]) {
-    toReturn = new Error('there is no such module');
-  } else {
-    toReturn = abPairs[moduleName].b = b;
-  }
   return toReturn;
 };
 
